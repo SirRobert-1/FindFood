@@ -1,8 +1,17 @@
 import { useRef } from "react";
 
 function LoginVendedor() {
-  const email = useRef("hgjhghjgjh");
+  const email = useRef("");
   const password = useRef("");
+
+  const handleSubmit = () => {
+    const data = {
+      email: email.current.value,
+      password: password.current.value,
+    };
+    console.log(data);
+  };
+
   return (
     <div>
       <div className="hero min-h-screen bg-base-200">
@@ -45,7 +54,12 @@ function LoginVendedor() {
                 </label>
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Login</button>
+                <button
+                  className="btn btn-primary"
+                  onClick={() => handleSubmit()}
+                >
+                  Login
+                </button>
               </div>
             </div>
           </div>
