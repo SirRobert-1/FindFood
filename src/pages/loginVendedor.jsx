@@ -35,7 +35,7 @@ function LoginVendedor() {
                   <span className="label-text text-black">Contraseña</span>
                 </label>
                 <input
-                  type="text"
+                  type="password"
                   placeholder="Contraseña"
                   className="input input-bordered"
                   ref={password}
