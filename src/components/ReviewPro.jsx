@@ -8,12 +8,11 @@ export default function reviewPro() {
           ¿Qué te pareció el servicio?
         </h1>
         <div class="flex flex-col items-center">
-          <input
-            type="textarea"
-            placeholder="Escribe una opnión o sugerencia"
-            class="m-5 w-80 md:w-11/12 h-40 md:h-48"
-          />
-          <button class="bg-boton mb-5 rounded-lg p-1.5">Enviar reseña</button>
+          <textarea
+            placeholder="Escribe un comentario o sugerencia"
+            className="textarea textarea-bordered textarea-lg w-full max-w-xs"
+          ></textarea>
+          <button className="btn bg-boton text-white">Enviar reseña</button>
         </div>
       </div>
     </div>
