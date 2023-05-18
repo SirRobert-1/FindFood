@@ -59,12 +59,12 @@ const productosData = [
 
 export default function Productos() {
   return (
-    <div>
+    <div className="flex flex-wrap justify-center">
       {productosData.map((producto) => {
         return (
           <div
             key={producto.id}
-            className="bg-cardFood m-10 p-2 md:p-2 text-black rounded-lg text-center text-md md:w-1/2"
+            className="bg-cardFood m-10 p-2 md:p-2 text-black rounded-lg text-center text-md w-2/3 md:w-1/4"
           >
             <h1 className="text-2xl">{producto.titulo}</h1>
             <h2>{producto.productos}</h2>

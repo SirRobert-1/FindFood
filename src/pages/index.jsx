@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="bg-white h-screen w-screen">
@@ -6,14 +7,16 @@ export default function Home() {
         <input
           type="text"
           placeholder="Busca la comida de tu agrado"
-          className="input input-bordered w-full max-w-xs md:max-w-lg my-20 bg-gray-300 placeholder-gray-800 text-black"
+          className="input input-bordered w-2/3 md:max-w-lg my-20 bg-gray-300 placeholder-gray-800 text-black mr-1"
         />
-        <Image
-          src="@/assets/icons/lupa.svg"
-          alt=""
-          width={20}
-          height={20}
-        ></Image>
+        <div className="bg-gray-300 w-8 h-8">
+          <Image
+            src="@/assets/icons/lupa.svg"
+            alt=""
+            width={20}
+            height={20}
+          ></Image>
+        </div>
       </div>
     </div>
   );
