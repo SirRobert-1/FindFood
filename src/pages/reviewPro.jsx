@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function reviewPro() {
   return (
@@ -14,7 +15,7 @@ export default function reviewPro() {
               className="textarea textarea-bordered textarea-lg w-full max-w-xs md:max-w-md h-40 md:h-54 m-5"
             ></textarea>
             <button className="btn bg-boton text-white mb-5">
-              Enviar reseña
+              <Link href="/productos">{"Enviar reseña"}</Link>
             </button>
           </div>
         </div>
