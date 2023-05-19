@@ -1,10 +1,11 @@
 import React from "react";
+import Link from "next/link";
 
 function registroProducto() {
   return (
     <div className="bg-white flex justify-center">
-      <div class="bg-gray-300 px-5 rounded-xl w-full max-w-sm shadow-2xl m-10">
-        <h1 class="text-center text-black text-2xl md:text-3xl mb-10">
+      <div class="bg-gray-300 px-5 rounded-xl w-full max-w-sm shadow-2xl m-9">
+        <h1 class="text-center text-black text-2xl md:text-3xl m-5">
           Registra tu producto
         </h1>
         <div class="flex flex-col items-center mb-10">
@@ -35,7 +36,7 @@ function registroProducto() {
             className="textarea textarea-bordered textarea-lg w-full max-w-sm mb-4"
           ></textarea>
           <button className="btn bg-boton text-white">
-            Registrar producto
+            <Link href="/productos">{"Registrar producto"}</Link>
           </button>
         </div>
       </div>

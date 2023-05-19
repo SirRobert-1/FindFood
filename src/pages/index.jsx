@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-white h-screen w-screen">
+    <div className="bg-white h-screen">
       <div className="flex flex-row items-center justify-center">
         <input
           type="text"
           placeholder="Busca la comida de tu agrado"
-          className="input input-bordered w-2/3 md:max-w-lg my-20 bg-gray-300 placeholder-gray-800 text-black mr-1"
+          className="input input-bordered w-3/5 md:max-w-lg my-20 bg-gray-300 placeholder-gray-800 text-black mr-1"
         />
         <div className="bg-gray-300 w-8 h-8">
           <Image
