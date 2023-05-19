@@ -12,7 +12,7 @@ export default function reviewPro() {
           <div class="flex flex-col items-center">
             <textarea
               placeholder="Escribe un comentario"
-              className="textarea textarea-bordered textarea-lg w-full max-w-xs md:max-w-md h-40 md:h-54 m-5"
+              className="textarea textarea-bordered textarea-lg w-4/5 max-w-xs md:max-w-md h-40 md:h-54 m-5"
             ></textarea>
             <button className="btn bg-boton text-white mb-5">
               <Link href="/productos">{"Enviar reseña"}</Link>
